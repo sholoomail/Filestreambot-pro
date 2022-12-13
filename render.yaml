@@ -4,7 +4,7 @@ services:
     name: Filestreambot-pro
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python ./Adarsh/__main__.py
+    startCommand: python start
     repo: https://github.com/sholoomail/Filestreambot-pro.git
     branch: main
     envVars:
