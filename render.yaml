@@ -1,0 +1,33 @@
+services:
+  # A background worker that consumes a queue
+  - type: worker
+    name: Filestreambot-pro
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python utils_bot.py
+    repo: https://github.com/sholoomail/Filestreambot-pro.git
+    branch: main
+    envVars:
+      - key: BOT_TOKEN 
+        sync: false
+      - key: API_ID 
+        sync: false
+      - key: API_HASH 
+        sync: false
+      - key: SESSION_NAME 
+        value: Filestreambot-pro
+      - key: APP_NAME 
+        value: Filestreambot-pro
+        sync: false
+      - key: BIN_CHANNEL 
+        sync: false
+      - key: DATABASE_URL 
+        sync: false
+      - key: OWNER_ID 
+        sync: false
+      - key: DOWNLOAD_LOCATION 
+        value: ./DOWNLOADS
+      - key: OWNER_USERNAME 
+        sync: false
+      - key: ENV 
+        value: True
