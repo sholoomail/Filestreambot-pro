@@ -1,10 +1,10 @@
 services:
   # A background worker that consumes a queue
   - type: worker
-    name: Filestreambot-pro
+    name: Filestreambotpro
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python start
+    startCommand: python -m bot
     repo: https://github.com/sholoomail/Filestreambot-pro.git
     branch: main
     envVars:
