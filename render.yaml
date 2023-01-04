@@ -14,8 +14,6 @@ services:
         sync: false
       - key: API_HASH 
         sync: false
-      - key: SESSION_NAME 
-        value: Filestreambot-pro
       - key: APP_NAME 
         value: Filestreambot-pro
       - key: BIN_CHANNEL 
@@ -24,8 +22,8 @@ services:
         sync: false
       - key: OWNER_ID 
         sync: false
-      - key: DOWNLOAD_LOCATION 
-        value: ./DOWNLOADS
+      - key: HAS_SSL 
+        value: True
       - key: OWNER_USERNAME 
         sync: false
       - key: ENV 
